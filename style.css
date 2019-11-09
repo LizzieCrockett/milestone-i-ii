@@ -16,6 +16,15 @@ li {
   margin: 10px;
 }
 
+#intro1 {
+  transition: 0.3s font-size linear;
+}
+
+#intro1:hover {
+  font-size: 2em;
+  transition: 0.1s font-size linear;
+}
+
 .newuserinfo {
   border: 1px dashed grey;
   padding-top: 20px;
@@ -37,7 +46,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-img {
+#random_marmalade {
   height: 250px;
   padding: 20px;
 }
