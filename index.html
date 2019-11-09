@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dr Birch's Jam Engine</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Dr Birch's Spectacular Jam Engine</h1>
+      <h2><i>find your jam heaven</i></h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Current Stock</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h3>
+        Dr Birch makes the finest jams, marmalades and chutneys in Scotland, and
+        you can order them right here.
+      </h3>
+      <p>
+        If you know about this site, you're part of the in crowd who can enjoy
+        the produce for free. <br />Tell us about yourself below and we'll set
+        up an account for you.
+      </p>
+      <section class="newuserinfo">
+        <form action="#" method="post">
+          <label for="name">What's your name? </label>
+          <input type="text" name="name" id="name" required /><br />
+
+          <label for="email">What's your email? </label>
+          <input type="email" name="email" id="email" required /><br />
+          <label for="whosentyou">
+            Who told you about this very secret site?</label
+          ><br />
+          <input
+            list="whosentyou-choices"
+            id="whosentyou"
+            name="whosentyou"
+            type="text"
+          />
+          <datalist id="whosentyou-choices">
+            <option value="Will"> Will</option>
+            <option value="Tom">Tom </option>
+            <option value="Fran">Fran</option>
+            <option value="Mary">Mary</option>
+            <option value="Anthony">Anthony</option>
+            <option value="Jess">Jess</option>
+            <option value="Lizzie">Lizzie </option>
+            <option value="Phil">Phil</option>
+            <option value="Isabel">Isabel</option>
+            <option value="Cecily">Cecily</option>
+            <option value="Eleanor">Eleanor</option>
+            <option value="Lydia">Lydia</option>
+          </datalist>
+          <br />
+
+          <p>What's your favourite? (Pick as many as you like)</p>
+
+          <input type="checkbox" id="jam" name="jam" />
+          <label for="jam">Jam</label>
+          <input type="checkbox" id="marmalade" name="marmalade" />
+          <label for="marmalade">Marmalade</label>
+          <input type="checkbox" id="chutney" name="chutney" />
+          <label for="chutney">Chutney</label> <br />
+          <p>
+            Dr Birch sends out a newsletter every so often with stock updates
+            and specials. Would you like to receive this?
+          </p>
+          <input type="radio" name="newsletter" id="yes" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="newsletter" id="no" value="no" />
+          <label for="no">No</label> <br />
+
+          <label for="how-often"
+            >How often do you eat jam, marmalade or chutney?</label
+          ><br />
+
+          <select name="how-often" id="how-often">
+            <option value="">--Please choose an option--</option>
+            <option value="daily">Every day</option>
+            <option value="weekly">At least once a week</option>
+            <option value="monthly">At least once a month</option>
+            <option value="yearly">At least once a year</option>
+            <option value="why">Why are you asking me this?</option>
+          </select>
+          <br />
+          <label for="joke">Tell us your favourite joke.</label> <br />
+          <textarea
+            id="joke"
+            name="joke"
+            rows="5"
+            cols="33"
+            placeholder="Or tell us what you had for breakfast. Or tell us anything really, we're just curious."
+          ></textarea>
+          <br />
+
+          <input type="submit" value="Join the tribe" />
+        </form>
+      </section>
+      <img src="http://tiny.cc/nd81ez" alt="A jar of marmalade" />
+    </main>
+    <section class="userlogin">
+      <h3>Come here often? Log in here</h3>
+      <form action="#" method="post">
+        <label for="username">Enter your username: </label>
+        <input type="text" name="username" id="username" required /><br />
+
+        <label for="pass">Enter your password: </label>
+        <input type="password" name="password" id="pass" required /><br />
+        <input type="submit" value="Enter the pantry" />
+      </form>
+    </section>
+    <footer>
+      <p>&copy; Dr Birch's Jam Engine</p>
+    </footer>
+  </body>
+</html>

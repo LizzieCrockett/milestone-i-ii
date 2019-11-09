@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+
+header {
+  border: 1px solid grey;
+}
+
+nav {
+  padding-bottom: 10px;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.newuserinfo {
+  border: 1px dashed grey;
+  padding-top: 20px;
+}
+
+.newuserinfo p {
+  margin: 0px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+select {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 250px;
+  padding: 20px;
+}
+
+footer {
+  border: 1px solid grey;
+  font-size: 0.75em;
+}
