@@ -132,6 +132,10 @@ iframe {
     display: none;
   }
 
+  .babyowls {
+    width: 200px;
+  }
+
   iframe {
     width: 200px;
     height: 200px;
