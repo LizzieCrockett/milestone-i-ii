@@ -1,0 +1,60 @@
+<!DOCTYPE html
+><head>
+  <title>Dr Birch's Jam Engine</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./style.css" rel="stylesheet" />
+  <script
+    src="https://kit.fontawesome.com/c0aea2d398.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="site-title navbar__link navbar__link-brand">
+        Dr Birch's Jam Engine
+      </div>
+      <div class="navbar__link navbar__link-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="tagline">find your jam heaven</div>
+      <nav class="site-title navbar__items">
+        <script>
+          function classToggle() {
+            const navs = document.querySelectorAll(".navbar__items");
+
+            navs.forEach(nav => nav.classList.toggle("navbar__ToggleShow"));
+          }
+
+          document
+            .querySelector(".navbar__link-toggle")
+            .addEventListener("click", classToggle);
+        </script>
+        <div class="navbar__link">
+          <a href="./index.html">Home</a>
+        </div>
+        <div class="navbar__link">
+          <a href="./about.html">About</a>
+        </div>
+        <div class="navbar__link">
+          <a href="./stock.html">Current Stock</a>
+        </div>
+        <div class="navbar__link">
+          <a href="./contact.html">Contact</a>
+        </div>
+        <form class="navbar__items navbar__items--right" action="">
+          <input type="search" placeholder="looking for something?" />
+          <button>Search</button>
+        </form>
+      </nav>
+    </div>
+  </header>
+  <h1>This is currently an imaginary business and there is no stock</h1>
+  <p>We were disappointed too.</p>
+  <iframe src="https://giphy.com/embed/UIpzEC5QTvuOQ"></iframe>
+  <p><a href="./index.html"> Go back to the home page.</a></p>
+  <footer>
+    <p>&copy; Dr Birch's Jam Engine</p>
+  </footer>
+</body>

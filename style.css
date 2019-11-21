@@ -1,58 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Rhodium+Libre|Staatliches&display=swap");
+
 body {
   text-align: center;
-  background-color: bisque;
+  font-family: "Rhodium Libre";
+  background-image: url("./jambackground1.png");
+  background-size: cover;
+  background-position: center;
+  color: #532d0a;
+  border: 5px;
 }
 
-header {
-  border: 1px solid grey;
-}
-
-nav {
-  padding-bottom: 10px;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 10px;
-}
-
-#intro1 {
-  transition: 0.3s font-size linear;
-}
-
-#intro1:hover {
+.navbar {
+  background-color: #787878;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: #e5c8a4;
+  justify-content: space-between;
   font-size: 2em;
-  transition: 0.1s font-size linear;
 }
 
-.newuserinfo {
-  border: 1px dashed grey;
-  padding-top: 20px;
+.navbar__link {
+  padding-right: 25px;
 }
 
-.newuserinfo p {
-  margin: 0px;
+.navbar__items {
+  display: flex;
 }
 
-input {
-  margin-bottom: 20px;
+.navbar__link-toggle {
+  display: none;
 }
+
+.site-title,
+footer {
+  font-family: "staatliches";
+}
+
+.tagline,
+.login_invite,
+button,
+input,
 select {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  font-family: "Lobster Two", cursive;
 }
 
-textarea {
-  margin-bottom: 20px;
+.tagline {
+  color: whitesmoke;
 }
 
-#random_marmalade {
-  height: 250px;
-  padding: 20px;
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #e87534;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
+.fave p,
+.newsletter p {
+  margin-bottom: 0px;
+}
+
+::placeholder {
+  font-family: "Lobster Two";
+}
+
+.howoften {
+  margin: 20px;
+}
+
+.joke {
+  margin-bottom: 20px;
 }
 
 footer {
-  border: 1px solid grey;
-  font-size: 0.75em;
+  color: #e5c8a4;
+}
+
+iframe {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar__items,
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar__items {
+    display: none;
+  }
+
+  .navbar__items--right {
+    margin-left: 0;
+  }
+
+  .navbar__ToggleShow {
+    display: flex;
+  }
+
+  .navbar__link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .welcometext_desktop {
+    display: none;
+  }
+
+  .intro_desktop {
+    display: none;
+  }
+
+  iframe {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
 }

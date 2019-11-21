@@ -2,45 +2,76 @@
 <html>
   <head>
     <title>Dr Birch's Jam Engine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./style.css" rel="stylesheet" />
-  </head>
+     <script src="https://kit.fontawesome.com/c0aea2d398.js" crossorigin="anonymous">
+ </script> 
+  
+</head>
   <body>
-    <header>
-      <h1>Dr Birch's Jam Engine</h1>
-      <h2><i>find your jam heaven</i></h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="#">Current Stock</a>
-          </li>
-          <li>
-            <a href="./contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+           <header>
+                    <div class="navbar">
+             <div class="site-title navbar__link navbar__link-brand">
+                Dr Birch's Jam Engine
+              </div>
+              <div class="navbar__link navbar__link-toggle">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="tagline">find your jam heaven</div>
+              <nav class="site-title navbar__items">
+                  <script>function classToggle() {
+                    const navs = document.querySelectorAll(".navbar__items");
+                  
+                    navs.forEach(nav => nav.classList.toggle("navbar__ToggleShow"));
+                  }
+                  
+                  document
+                    .querySelector(".navbar__link-toggle")
+                    .addEventListener("click", classToggle);
+                  </script>
+              <div class= "navbar__link">
+                <a href="./index.html">Home</a>
+              </div>
+              <div class= "navbar__link">
+                <a href="./about.html">About</a>
+              </div>
+              <div class= "navbar__link">
+                <a href="./stock.html">Current Stock</a>
+              </div>
+              <div class= "navbar__link">
+                <a href="./contact.html">Contact</a>
+              </div>
+              <form class="navbar__items navbar__items--right" action="">
+              <input type="search" placeholder="looking for something?">
+              <button>Search</button>
+              </form>
+             </nav>
+          </div>
+        </header>
 
     <main>
-      <h3 id="intro1">
-        Dr Birch makes the finest jams, marmalades and chutneys in Scotland, and
-        you can order them right here.
+        
+      <h1 class="welcometext_default">
+        Hello, you. Do you like jam?
+      </h1>
+      <h2 class="welcometext_desktop">
+          Dr Birch makes the finest jams, marmalades and chutneys in Scotland, and
+          you can order them right here.
+        </h2>
+      <h3 class="intro_desktop">
+          If you know about this site, you're part of the in crowd who can enjoy
+          Dr Birch's produce for free.
       </h3>
-      <p>
-        If you know about this site, you're part of the in crowd who can enjoy
-        the produce for free. <br />Tell us about yourself below and we'll set
-        up an account for you.
-      </p>
+         <h3 class="intro_default">
+           Tell us about yourself below and we'll set
+          up an account for you.
+         </h3>
       <section class="newuserinfo">
         <form action="#" method="post">
-          <label for="name">What's your name? </label>
+        <div class="whoareyou">    
+        <label for="name">What's your name? </label>
           <input type="text" name="name" id="name" required /><br />
-
           <label for="email">What's your email? </label>
           <input type="email" name="email" id="email" required /><br />
           <label for="whosentyou">
@@ -66,16 +97,17 @@
             <option value="Eleanor">Eleanor</option>
             <option value="Lydia">Lydia</option>
           </datalist>
-          <br />
-
+        </div>
+        <div class="fave">
           <p>What's your favourite? (Pick as many as you like)</p>
-
           <input type="checkbox" id="jam" name="jam" />
           <label for="jam">Jam</label>
           <input type="checkbox" id="marmalade" name="marmalade" />
           <label for="marmalade">Marmalade</label>
           <input type="checkbox" id="chutney" name="chutney" />
           <label for="chutney">Chutney</label> <br />
+        </div>
+         <div class="newsletter">
           <p>
             Dr Birch sends out a newsletter every so often with stock updates
             and specials. Would you like to receive this?
@@ -83,12 +115,12 @@
           <input type="radio" name="newsletter" id="yes" value="yes" />
           <label for="yes">Yes</label>
           <input type="radio" name="newsletter" id="no" value="no" />
-          <label for="no">No</label> <br />
-
+          <label for="no">No</label>
+        </div>
+        <div class="howoften">
           <label for="how-often"
             >How often do you eat jam, marmalade or chutney?</label
           ><br />
-
           <select name="how-often" id="how-often">
             <option value="">--Please choose an option--</option>
             <option value="daily">Every day</option>
@@ -97,7 +129,8 @@
             <option value="yearly">At least once a year</option>
             <option value="why">Why are you asking me this?</option>
           </select>
-          <br />
+        </div>
+        <div class="joke">
           <label for="joke">Tell us your favourite joke.</label> <br />
           <textarea
             id="joke"
@@ -106,19 +139,13 @@
             cols="33"
             placeholder="Or tell us what you had for breakfast. Or tell us anything really, we're just curious."
           ></textarea>
-          <br />
+          </div>
 
           <input type="submit" value="Join the tribe" />
         </form>
-      </section>
-      <img
-        id="random_marmalade"
-        src="http://tiny.cc/nd81ez"
-        alt="A jar of marmalade"
-      />
     </main>
     <section class="userlogin">
-      <h3>Come here often? Log in here</h3>
+      <h3 class="login_invite">Come here often? Log in here</h3>
       <form action="#" method="post">
         <label for="username">Enter your username: </label>
         <input type="text" name="username" id="username" required /><br />

@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Dr Birch's Jam Engine</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./style.css" rel="stylesheet" />
-    <title>This is a brand new page</title>
+    <script
+      src="https://kit.fontawesome.com/c0aea2d398.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <div class="navbar">
+        <div class="site-title navbar__link navbar__link-brand">
+          Dr Birch's Jam Engine
+        </div>
+        <div class="navbar__link navbar__link-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="tagline">find your jam heaven</div>
+        <nav class="site-title navbar__items">
+          <script>
+            function classToggle() {
+              const navs = document.querySelectorAll(".navbar__items");
+
+              navs.forEach(nav => nav.classList.toggle("navbar__ToggleShow"));
+            }
+
+            document
+              .querySelector(".navbar__link-toggle")
+              .addEventListener("click", classToggle);
+          </script>
+          <div class="navbar__link">
+            <a href="./index.html">Home</a>
+          </div>
+          <div class="navbar__link">
+            <a href="./about.html">About</a>
+          </div>
+          <div class="navbar__link">
+            <a href="./stock.html">Current Stock</a>
+          </div>
+          <div class="navbar__link">
+            <a href="./contact.html">Contact</a>
+          </div>
+          <form class="navbar__items navbar__items--right" action="">
+            <input type="search" placeholder="looking for something?" />
+            <button>Search</button>
+          </form>
+        </nav>
+      </div>
+    </header>
     <h1>It is called about</h1>
     <h2>so it should contain</h2>
     <p>some explanation of what it is about</p>
+    <p>but sadly it doesn't</p>
+    <p><i>here are some baby owls</i></p>
     <img
       src="https://media.gettyimages.com/photos/two-baby-owls-sitting-on-a-branch-indonesia-picture-id743694477?s=612x612"
       alt="some baby owls"
     />
-    <p><i>here are some baby owls</i></p>
     <p><a href="./index.html"> Go back to the home page.</a></p>
+    <footer>
+      <p>&copy; Dr Birch's Jam Engine</p>
+    </footer>
   </body>
 </html>
