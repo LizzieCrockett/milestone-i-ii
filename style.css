@@ -134,6 +134,7 @@ iframe {
 
   .babyowls {
     width: 200px;
+    height: auto;
   }
 
   iframe {
